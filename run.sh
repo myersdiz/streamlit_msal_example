@@ -1,1 +1,1 @@
-python -m streamlit wof.py --server.port 8000 --server.address 0.0.0.0
+python -m streamlit run wof.py --server.port 8000 --server.address 0.0.0.0
