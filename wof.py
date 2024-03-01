@@ -1,9 +1,21 @@
 import streamlit as st
 from streamlit_msal import Msal
 import os
+import platform
 
-client_id = os.getenv("STREAMLIT_AZURE_CLIENT_ID")
-authority = os.getenv("APPSETTING_AZURE_TENANT_ID")
+st.write(platform.system())
+
+try:
+    client_id = os.getenv("AZURE_CLIENT_ID")
+except:
+    st.write("Please set the environment variable AZURE_CLIENT_ID")
+    st.stop()
+
+try:
+    authority = "https://login.microsoftonline.com/" + os.getenv("AZURE_TENANT_ID")
+except:
+    st.write("Please set the environment variable AZURE_TENANT_ID")
+    st.stop()
 
 with st.sidebar:
     auth_data = Msal.initialize_ui(
