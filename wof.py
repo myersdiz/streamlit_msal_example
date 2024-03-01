@@ -24,7 +24,7 @@ with st.sidebar:
         scopes=[], # Optional
         # Customize (Default values):
         connecting_label="Connecting",
-        disconnected_label="Click <Sign in> to authenticate",
+        disconnected_label="Disconnected",
         sign_in_label="Sign in",
         sign_out_label="Sign out"
     )
