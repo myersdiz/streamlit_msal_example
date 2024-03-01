@@ -49,7 +49,7 @@ st.sidebar.write(f"Your account id is: {account_id}")
 st.sidebar.write("Your access token is:")
 st.sidebar.code(access_token)
 
-st.image("https://www.thewordfinder.com/wof-puzzle-generator/puzzle.php?bg=1&ln1=Streamlit&ln2=Kamps&ln3=Pallets&ln4=&cat=SHOW TITLE&")
+st.image("https://www.thewordfinder.com/wof-puzzle-generator/puzzle.php?bg=1&ln1=&ln2=JULIE ANDREWS&ln3=AS MARY&ln4=POPPINS&cat=ACTOR AND ROLE&")
 
 st.write("Auth data:")
 st.json(auth_data)
