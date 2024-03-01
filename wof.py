@@ -3,8 +3,8 @@ from streamlit_msal import Msal
 
 import os
 
-client_id = os.getenv("AZURE_CLIENT_ID")
-authority = os.getenv("AZURE_AUTHORITY")
+client_id = os.getenv("APPSETTING_AZURE_TENANT_ID")
+authority = os.getenv("APPSETTING_AZURE_CLIENT_ID")
 
 with st.sidebar:
     auth_data = Msal.initialize_ui(
