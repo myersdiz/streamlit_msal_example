@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_msal import Msal
 import os
 
-client_id = os.getenv("APPSETTING_AZURE_CLIENT_ID")
+client_id = os.getenv("STREAMLIT_AZURE_CLIENT_ID")
 authority = os.getenv("APPSETTING_AZURE_TENANT_ID")
 
 with st.sidebar:
